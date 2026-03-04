@@ -383,40 +383,40 @@
 
         <div class="field-group">
           <label>姓名 <span class="required">*</span></label>
-          <input type="text" name="姓名" placeholder="请输入姓名" required>
+          <input type="text" name="1_姓名" placeholder="请输入姓名" required>
         </div>
 
         <div class="row-2">
           <div class="field-group">
-            <label>电邮 <span class="required">*</span></label>
-            <input type="email" name="电邮" placeholder="your@email.com" required>
+            <label>电话</label>
+            <input type="tel" name="2_电话" placeholder="416-xxx-xxxx">
           </div>
           <div class="field-group">
-            <label>电话</label>
-            <input type="tel" name="电话" placeholder="416-xxx-xxxx">
+            <label>电邮 <span class="required">*</span></label>
+            <input type="email" name="3_电邮" placeholder="your@email.com" required>
           </div>
         </div>
 
         <div class="field-group">
           <label>地址</label>
-          <input type="text" name="地址" placeholder="街道地址（选填）">
+          <input type="text" name="4_地址" placeholder="街道地址（选填）">
         </div>
 
         <div class="row-2">
           <div class="field-group">
             <label>参加人数 <span class="required">*</span></label>
-            <select name="参加人数" required>
+            <select name="5_参加人数" required>
               <option value="" disabled selected>请选择</option>
-              <option value="1">1 人</option>
-              <option value="2">2 人</option>
-              <option value="3">3 人</option>
-              <option value="4">4 人</option>
-              <option value="5+">5 人或以上</option>
+              <option value="1 人">1 人</option>
+              <option value="2 人">2 人</option>
+              <option value="3 人">3 人</option>
+              <option value="4 人">4 人</option>
+              <option value="5 人或以上">5 人或以上</option>
             </select>
           </div>
           <div class="field-group">
             <label>从何处知道？</label>
-            <select name="从何处知道">
+            <select name="6_从何处知道">
               <option value="" disabled selected>请选择</option>
               <option value="教会通知">教会通知</option>
               <option value="朋友介绍">朋友介绍</option>
@@ -429,11 +429,11 @@
 
         <div class="field-group">
           <label>备注</label>
-          <textarea name="备注" rows="3" placeholder="有任何需要告知的事项（选填）"></textarea>
+          <textarea name="7_备注" rows="3" placeholder="有任何需要告知的事项（选填）"></textarea>
         </div>
 
         <!-- Hidden fields for Formspree -->
-        <input type="hidden" name="_subject" value="【起初的爱特会】新报名 🙏">
+        <input type="hidden" name="_subject" value="【起初的爱特会报名】新报名 🙏">
         <input type="text" name="_gotcha" style="display:none">
 
         <button type="submit" class="submit-btn" id="submit-btn">提交报名</button>
