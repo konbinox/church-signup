@@ -379,7 +379,14 @@
       <p class="form-subtitle">报名免费，自由奉献 · 截止日期 2026/3/3<br>如有疑问请联络 Cathy 姊妹：416-273-6009</p>
 
       <!-- ⚠️ 把下面 mwvnglqz 换成你的 Formspree 表单ID -->
-      <form id="signup-form" action="https://formspree.io/f/mwvnglqz" method="POST">
+      <form id="signup-form" action="https://api.web3forms.com/submit" method="POST">
+
+        <!-- Web3Forms 设置 -->
+        <input type="hidden" name="access_key" value="24921eb4-e7d9-44fd-9034-0cb24b3a6c77">
+        <input type="hidden" name="subject" value="【起初的爱特会报名】新报名 🙏">
+        <input type="hidden" name="from_name" value="起初的爱特会报名表">
+        <input type="hidden" name="to" value="konbinox@gmail.com,cathy_hjj@yahoo.ca">
+        <input type="checkbox" name="botcheck" style="display:none">
 
         <div class="field-group">
           <label>姓名 <span class="required">*</span></label>
@@ -431,10 +438,6 @@
           <label>备注</label>
           <textarea name="7_备注" rows="3" placeholder="有任何需要告知的事项（选填）"></textarea>
         </div>
-
-        <!-- Hidden fields for Formspree -->
-        <input type="hidden" name="_subject" value="【起初的爱特会报名】新报名 🙏">
-        <input type="text" name="_gotcha" style="display:none">
 
         <button type="submit" class="submit-btn" id="submit-btn">提交报名</button>
         <div class="error-msg" id="error-msg">提交失败，请稍后再试，或直接联络 Cathy 姊妹。</div>
